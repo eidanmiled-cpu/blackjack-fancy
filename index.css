@@ -1,0 +1,175 @@
+.clipped-diamonds{
+background-image: url("card.png");
+background-position: 3px 100px;
+height: 100px;
+width: 90px;
+
+border-top: 50px solid rgb(250,250,250); /* 50px d'épaisseur, solide, rouge */
+border-left: none;
+border-right: none;
+border-bottom: 50px solid rgb(250,250,250);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 10px;
+border-image: 2px solid rgb(5,23,2);
+}
+
+.clipped-clubs{
+background-image: url("card.png");
+background-position: 98px -100px;
+height: 100px;
+width: 99px;
+
+border-top: 50px solid rgb(250,250,250); /* 50px d'épaisseur, solide, rouge */
+border-left: none;
+border-right: none;
+border-bottom: 50px solid rgb(250,250,250);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 10px;
+
+}
+
+.clipped-spades{
+background-image: url("card.png");
+background-position: 8px 200px;
+height: 100px;
+width: 100px;
+
+border-top: 50px solid rgb(250,250,250); /* 50px d'épaisseur, solide, rouge */
+border-left: none;
+border-right: none;
+border-bottom: 50px solid rgb(250,250,250);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 10px;
+
+}
+
+.clipped-hearth{
+background-image: url("card.png");
+background-position: -99px 200px;
+height: 100px;
+width: 100px;
+
+border-top: 50px solid rgb(250,250,250); /* 50px d'épaisseur, solide, rouge */
+border-left: none;
+border-right: none;
+border-bottom: 50px solid rgb(250,250,250);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 10px;
+
+}
+
+
+.clipped-joker{
+background-image: url("1f31f.gif");
+
+height: 100px;
+width: 100px;
+background-size: contain; /* 👈 LA CLÉ */ 
+background-repeat: no-repeat; 
+background-position: center;
+background-color: white;
+border-top: 50px solid rgb(250,250,250); /* 50px d'épaisseur, solide, rouge */
+border-left: none;
+border-right: none;
+border-bottom: 50px solid rgb(250,250,250);
+box-shadow: 0 0 5px rgb(0, 0, 0);
+border-radius: 10px;
+
+}
+#message-el{
+
+position: relative;
+  font-size: 25px;
+text-align: center;
+
+color: rgb(19, 44, 126);
+font-family: italic;
+
+
+
+
+  top: -20px
+
+}
+button{
+
+    color: rgb(12, 9, 160);
+    border: none;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.buttons{
+    position: absolute;
+    top: 1rem;           /* distance du bas */
+    left: 50%;               /* place le bord gauche à 50% de l'écran */
+transform: translateX(-50%);  /* recule de la moitié de sa propre largeur pour centrer */
+      top: 400px;
+      
+    display: flex;
+    flex-direction: column;    /* 🔥 boutons en colonne */
+    gap: 12px;
+
+    width: fit-content;   /* empêche l’étirement */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#cards-container{
+position: relative;
+  top:60px;
+ display: flex;
+  justify-content: center;  /* Centre horizontalement */
+  gap: 15px;    
+margin-top: 50px;
+
+}
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("casino-7260765_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+
+}
+
+body::after{
+  content:"";
+  position:fixed;
+  inset:0;
+   background-image: url("casino-7260765_1920.jpg");
+   background-size: cover;
+   background-position: center;
+   filter:blur(5px) ;
+   transform:scale(1.05);
+   z-index:-1;
+   pointer-events: none;
+
+
+  }
+#sum-el{
+text-decoration: aquamarine;
+top: 40%;
+text-shadow: 1px 0 0 rgb(5,23,2);
+font-size:35px;
+color: rgb(30, 161, 194);
+position:relative;
+left:100px;
+
+
+}
+
